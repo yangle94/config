@@ -9,7 +9,7 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    
+
 #mvc
   # 这个是配置模板路径的，默认就是templates，可不用配置
   thymeleaf:
@@ -89,4 +89,4 @@ feign:
     response:
       enabled: true
 
-from: 12345678
+from: 1234
