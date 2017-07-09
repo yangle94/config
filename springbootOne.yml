@@ -76,3 +76,11 @@ eureka:
 ###注册到注册中心后的host路径
 #注释此行，自动去检测主机名
 #eureka.instance.hostname=one
+
+feign:
+  #请求gzip压缩
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true

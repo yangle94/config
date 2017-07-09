@@ -46,7 +46,7 @@ pagehelper:
 
 #JettyPort
 server:
-  port: 9006
+  port: 9007
 
 #JMX
 endpoints:
