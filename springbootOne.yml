@@ -6,6 +6,10 @@ spring:
     password:
     driver-class-name: com.mysql.jdbc.Driver
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    
 #mvc
   # 这个是配置模板路径的，默认就是templates，可不用配置
   thymeleaf:
@@ -21,7 +25,7 @@ spring:
     time-zone: GMT+8
 
 #SpringAdmin
-  # boot:
+  # boot:Ï
   #   admin:
   #     url: http://localhost:9000
 
