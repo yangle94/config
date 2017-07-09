@@ -1,8 +1,8 @@
 #JettyPort
-server.port=9007
+server:
+  port: 9006
 
-#SpringAdmin
-spring.boot.admin.url=http://admin:9000
+from: 1234
 
 #eureka.instance.prefer-ip-address=true
 #eureka.instance.preferIpAddress=true
