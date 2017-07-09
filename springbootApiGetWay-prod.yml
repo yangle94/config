@@ -1,5 +1,9 @@
+#SpringAdmin
+# spring:
+#   boot:
+#     admin:
+#       url: http://admin:9000
 
-#使用IP
 #eureka.instance.prefer-ip-address=true
 #eureka.instance.preferIpAddress=true
 #eureka.instance.instance-id=${spring.cloud.client.ipAddress}:${server.port}
