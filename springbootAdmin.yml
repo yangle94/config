@@ -1,7 +1,17 @@
+#使用IP
+eureka:
+  instance:
+    perferIpAddress: true
+
 #时区
 spring:
   jackson:
     time-zone: GMT+8
+
+#JMX
+endpoints:
+  jmx:
+    unique-names: true
 
 management:
   security:
