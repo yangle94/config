@@ -1,6 +1,4 @@
-#JettyPort
-server:
-  port: 9002
+
 
 #时区
 spring:

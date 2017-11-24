@@ -1,7 +1,3 @@
-#SpringPort
-server:
-  port: 9003
-
 #时区
 spring:
   jackson:
