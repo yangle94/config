@@ -31,6 +31,22 @@ mybatis:
   typeAliasesPackage: cn.ylapl.mapper
 
 
+#JMX
+endpoints:
+  jmx:
+    unique-names: true
+
+management:
+  security:
+    enabled: false
+  health:
+    db:
+      enabled: false
+
+security:
+  basic:
+    enabled: false
+
 #pagehelper
 pagehelper:
   helper-dialect: mysql
