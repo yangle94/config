@@ -1,19 +1,11 @@
+#JettyPort
+server:
+  port: 9002
+
 #时区
 spring:
   jackson:
     time-zone: GMT+8
-
-#spring.profiles.active=@profileActive@
-
-#SpringAdmin
-# spring:
-#   boot:
-#     admin:
-#       url: http://localhost:9000
-
-#JettyPort
-server:
-  port: 9004
 
 #JMX
 endpoints:
@@ -29,10 +21,6 @@ management:
 security:
   basic:
     enabled: false
-
-#eurekaService
-#注释此行，自动去检测主机名
-#eureka.instance.hostname=one
 
 #健康检查
 eureka:

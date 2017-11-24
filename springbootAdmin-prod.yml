@@ -1,7 +1,0 @@
-
-#使用IP
-# eureka:
-#   instance:
-#     prefer-ip-address: true
-#     preferIpAddress: true
-#     instance-id: ${spring.cloud.client.ipAddress}:${server.port}

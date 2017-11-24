@@ -1,7 +1,3 @@
-server:
-  port: 9003
-#注释此行，自动去检测主机名
-#eureka.instance.hostname=one
 eureka:
   client:
     registerWithEureka: true

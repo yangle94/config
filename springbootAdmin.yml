@@ -1,11 +1,11 @@
+#SpringPort
+server:
+  port: 9003
+
 #时区
 spring:
   jackson:
     time-zone: GMT+8
-
-#SpringPort
-server:
-  port: 9000
 
 management:
   security:
@@ -17,10 +17,6 @@ management:
 security:
   basic:
     enabled: false
-
-#eurekaService
-#注释此行，自动去检测主机名
-#eureka.instance.hostname=one
 
 #健康检查
 eureka:
