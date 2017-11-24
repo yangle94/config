@@ -30,7 +30,6 @@ mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: cn.ylapl.mapper
 
-
 #JMX
 endpoints:
   jmx:
