@@ -1,6 +1,0 @@
-eureka:
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    #健康检查
-    healthcheck.enabled: true

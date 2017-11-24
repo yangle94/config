@@ -1,9 +1,0 @@
-#JettyPort
-server:
-  port: 9006
-
-from: 1234
-
-#eureka.instance.prefer-ip-address=true
-#eureka.instance.preferIpAddress=true
-#eureka.instance.instance-id=${spring.cloud.client.ipAddress}:${server.port}
