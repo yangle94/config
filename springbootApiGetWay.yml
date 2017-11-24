@@ -2,7 +2,9 @@
 eureka:
   instance:
     perferIpAddress: true
-    
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+
+
 #时区
 spring:
   jackson:
