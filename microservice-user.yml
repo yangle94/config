@@ -48,6 +48,8 @@ security:
   oauth2:
     resource:
       filter-order: 3
+  basic:
+    enabled: false
 
 #JMX
 endpoints:
@@ -60,9 +62,6 @@ management:
   health:
     db:
       enabled: false
-security:
-  basic:
-    enabled: false
 
 #健康检查
 eureka:
