@@ -7,8 +7,10 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
 
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
+    username: user
+    password: 123456
 
 #mvc
   # 这个是配置模板路径的，默认就是templates，可不用配置
