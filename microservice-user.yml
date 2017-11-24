@@ -22,8 +22,6 @@ spring:
       time-zone: GMT+8
       serialization:
         WRITE_DATES_AS_TIMESTAMPS: false
-  #profiles:
-  #  active: ${profileActive}
 
 #mybatis
 mybatis:
@@ -50,3 +48,24 @@ security:
   oauth2:
     resource:
       filter-order: 3
+
+#JMX
+endpoints:
+  jmx:
+    unique-names: true
+
+management:
+  security:
+    enabled: false
+  health:
+    db:
+      enabled: false
+security:
+  basic:
+    enabled: false
+
+#健康检查
+eureka:
+  client:
+    healthcheck:
+      enabled: true
