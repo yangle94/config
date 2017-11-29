@@ -15,7 +15,7 @@ spring:
     timeout: 0
   datasource:
     url: jdbc:mysql://mysql:3306/userdb?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8
-    username: user
+    username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   jackson:
