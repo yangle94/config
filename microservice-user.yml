@@ -62,9 +62,3 @@ management:
   health:
     db:
       enabled: false
-
-#健康检查
-eureka:
-  client:
-    healthcheck:
-      enabled: true

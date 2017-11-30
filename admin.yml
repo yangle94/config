@@ -1,10 +1,9 @@
 #使用IP
 eureka:
   instance:
-    perferIpAddress: true
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
-
-
+    prefer-ip-address: true
+        #注册ID用默认就好，默认为 ip:hostname:port
+#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
 #时区
 spring:
   jackson:
@@ -25,9 +24,7 @@ management:
 security:
   basic:
     enabled: false
-
-#健康检查
-eureka:
-  client:
-    healthcheck:
-      enabled: true
+    
+#JettyPort
+server:
+  port: 9003
