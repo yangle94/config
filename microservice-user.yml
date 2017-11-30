@@ -22,7 +22,8 @@ spring:
       time-zone: GMT+8
       serialization:
         WRITE_DATES_AS_TIMESTAMPS: false
-
+service:
+  port: 10000
 #mybatis
 mybatis:
   mapperLocations: classpath:mapper/*.xml

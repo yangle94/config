@@ -2,8 +2,9 @@
 eureka:
   instance:
     perferIpAddress: true
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
-
+    #注册ID用默认就好，默认为 ip:hostname:port
+#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+#    
 #时区
 spring:
   jackson:
