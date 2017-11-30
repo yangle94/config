@@ -23,7 +23,7 @@ spring:
       serialization:
         WRITE_DATES_AS_TIMESTAMPS: false
 server:
-  port: 
+  port: 10000
 #mybatis
 mybatis:
   mapperLocations: classpath:mapper/*.xml
