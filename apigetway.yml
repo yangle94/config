@@ -11,19 +11,6 @@ spring:
     time-zone: GMT+8
 
 #JMX
-endpoints:
-  jmx:
-    unique-names: true
-
-management:
-  security:
-    enabled: false
-  health:
-    db:
-      enabled: false
-security:
-  basic:
-    enabled: false
 
 #重定向保证host内容相同
 zuul:
