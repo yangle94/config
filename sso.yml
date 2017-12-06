@@ -33,4 +33,4 @@ security:
     
 #JettyPort
 server:
-  port: 9003
+  port: 9004
