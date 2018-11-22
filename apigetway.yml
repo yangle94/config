@@ -21,3 +21,12 @@ management:
     web:
       exposure:
         include: "*"
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          #启用eureka自动查找服务
+          enabled: true
+          #服务名不区分大小写
+          lowerCaseServiceId: true
