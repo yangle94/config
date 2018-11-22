@@ -1,36 +1,23 @@
-#使用IP
-eureka:
-  instance:
-    prefer-ip-address: true
-        #注册ID用默认就好，默认为 ip:hostname:port
-#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+server:
+  port: 9003
+
 #时区
 spring:
   jackson:
     time-zone: GMT+8
+
+#使用IP
+eureka:
+  instance:
+    prefer-ip-address: true
     
-  rabbitmq:
-    host: rabbitmq
-    port: 5672
-    username: user
-    password: 123456
+#eureka客户端ribbon刷新时间,默认30s
+ribbon:
+  ServerListRefreshInterval: 10000
 
-#JMX
-endpoints:
-  jmx:
-    unique-names: true
-
+#admin 允许监控所有接口
 management:
-  security:
-    enabled: false
-  health:
-    db:
-      enabled: false
-
-security:
-  basic:
-    enabled: false
-    
-#JettyPort
-server:
-  port: 9003
+  endpoints:
+    web:
+      exposure:
+        include: "*"

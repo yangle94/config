@@ -1,27 +1,23 @@
+server:
+  port: 9002
+
 #使用IP
 eureka:
   instance:
     perferIpAddress: true
-    #注册ID用默认就好，默认为 ip:hostname:port
-#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
-#    
+
 #时区
 spring:
   jackson:
     time-zone: GMT+8
-    
-  rabbitmq:
-    host: rabbitmq
-    port: 5672
-    username: user
-    password: 123456
 
-#JMX
+#eureka客户端ribbon刷新时间,默认30s
+ribbon:
+  ServerListRefreshInterval: 10000
 
-#重定向保证host内容相同
-zuul:
-  add-host-header: true
-
-#SpringPort
-server:
-  port: 9002
+#admin 允许监控所有接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
