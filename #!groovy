@@ -1,0 +1,50 @@
+#!groovy
+pipeline {
+	agent any
+
+	environment {
+
+		Repository = "git@192.168.10.89:ai-app/ewell-discovery-eureka.git"
+		Module = "ewell-discovery-eureka"
+		Script_path="/home/scrpts"
+	}
+
+	stages {
+
+		stage('获取代码') {
+
+			steps {
+				echo "start fetch code from git: ${Repository}"
+				deleteDir()
+				git branch: 'docker', url: "${Repository}"
+			}
+		}
+
+		stage('编译 + 单元测试') {
+
+			steps {
+				echo "start compile"
+				sh "export PATH=$PATH:/usr/java/jdk1.8.0_121/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin && export JAVA_HOME=/usr/local/java && /usr/local/maven/bin/mvn -U clean package"
+			}
+		}
+
+		stage('构建镜像') {
+
+			steps {
+
+				echo "start build image"
+
+				sh "${Script_path}/build-images.sh ${Module}"
+			}
+		}
+
+		stage('发布系统') {
+
+			steps {
+
+				echo "start publish"
+			}
+		}
+
+	}
+}
